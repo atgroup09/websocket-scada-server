@@ -1,0 +1,13 @@
+[Unit]
+Description=wsloggerd
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/wslogger --config /usr/local/etc/wslogger.conf.d/__config.json --sname WsLogger --sdesc WsLoggerServer
+User=pi
+Group=pi
+StandardOutput=syslog
+
+[Install]
+WantedBy=multi-user.target

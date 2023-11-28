@@ -1,0 +1,15 @@
+[{"ID":1,
+  "ProtoComm":"serial",
+  "ProtoData":"modbus_rtu",
+  "Port":0,
+  "PortPref":"/dev/ttyUSB",
+  "PortDev":"/dev/ttyUSB0",
+  "Spd":115200,
+  "Prty":"None",
+  "DataBits":8,
+  "StopBits":1,
+  "Mode":"RS232",
+  "Allow":1,
+  "Devices":"/usr/local/etc/wsscada.conf.d/devices.json"
+  }
+]

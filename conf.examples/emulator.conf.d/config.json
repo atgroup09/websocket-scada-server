@@ -1,0 +1,6 @@
+{ "ID":"wschat",
+  "Port":8100,
+  "CliMax":30,
+  "CliLifeTime":-1,
+  "CliBlackList":"D:\\test\\wschat\\wschat.conf.d\\black.json"
+}

@@ -1,0 +1,15 @@
+[{ "ID":1,  "Addr":39, "Class":"hold", "Type":"word", "Allow":"r|w|h", "Var":"SET_ID" },
+ { "ID":2,  "Addr":40, "Class":"hold", "Type":"word", "Allow":"r|w|h", "Var":"SP" },
+ { "ID":3,  "Addr":41, "Class":"hold", "Type":"word", "Allow":"r|w|h", "Var":"D" },
+ { "ID":4,  "Addr":42, "Class":"hold", "Type":"word", "Allow":"r|w|h", "Var":"DHI" },
+ { "ID":5,  "Addr":43, "Class":"hold", "Type":"word", "Allow":"r|w|h", "Var":"THI" },
+ { "ID":6,  "Addr":44, "Class":"hold", "Type":"word", "Allow":"r|w|h", "Var":"DLO" },
+ { "ID":7,  "Addr":45, "Class":"hold", "Type":"word", "Allow":"r|w|h", "Var":"TLO" },
+ { "ID":8,  "Addr":46, "Class":"hold", "Type":"word", "Allow":"r|w|h", "Var":"TB" },
+ { "ID":9,  "Addr":47, "Class":"hold", "Type":"word", "Allow":"r|h", "Var":"STATES" },
+ { "ID":10, "Addr":48, "Class":"hold", "Type":"word", "Allow":"r|h", "Var":"TT001" },
+ { "ID":11, "Addr":49, "Class":"hold", "Type":"word", "Allow":"r|h", "Var":"STATE" },
+ { "ID":12, "Addr":50, "Class":"hold", "Type":"word", "Allow":"r|h", "Var":"DIAGN" },
+ { "ID":13, "Addr":51, "Class":"hold", "Type":"word", "Allow":"r|h", "Var":"PLC" },
+ { "ID":14, "Addr":52, "Class":"hold", "Type":"word", "Allow":"r|h", "Var":"PLC_TT" }
+]

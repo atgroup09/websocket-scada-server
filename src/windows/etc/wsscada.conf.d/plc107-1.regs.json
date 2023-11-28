@@ -1,0 +1,8 @@
+[{ "ID":1,  "Addr":0,   "Var":"DI0", "Class":"disc", "Type":"bool", "Allow":"r|h" },
+ { "ID":2,  "Addr":1,   "Var":"DI1", "Class":"disc", "Type":"bool", "Allow":"r|h" },
+ { "ID":3,  "Addr":2,   "Var":"DI2", "Class":"disc", "Type":"bool", "Allow":"r|h" },
+ { "ID":9,  "Addr":0,  "Var":"HW_CODE", "Class":"inpt", "Type":"word", "Allow":"r|h" },
+ { "ID":10, "Addr":1,  "Var":"RTE_VER", "Class":"inpt", "Type":"word", "Allow":"r|h" },
+ { "ID":11, "Addr":2,  "Var":"RTE_YEAR", "Class":"inpt", "Type":"word", "Allow":"r|h" },
+ { "ID":17, "Addr":0, "Var":"PLC", "Class":"hold", "Type":"word", "Allow":"r|h" }
+]

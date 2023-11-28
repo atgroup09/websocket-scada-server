@@ -1,0 +1,10 @@
+[{"ID":1,
+  "Class":"plc107",
+  "BaseAddr":1,
+  "IP": "127.0.0.1",
+  "Port": 502,
+  "Allow":1,
+  "Reconnect":1,
+  "Registers":"C:\\ZVV\\workspace\\wslogger\\server\\__test\\win32\\wsscada.conf.d\\plc107-1.regs.json"
+  }
+]

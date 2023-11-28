@@ -1,0 +1,18 @@
+[{ "ID":1,  "Addr":0,   "Var":"DI0", "Class":"disc", "Type":"bool", "Allow":"r|h" },
+ { "ID":2,  "Addr":1,   "Var":"DI1", "Class":"disc", "Type":"bool", "Allow":"r|h" },
+ { "ID":3,  "Addr":2,   "Var":"DI2", "Class":"disc", "Type":"bool", "Allow":"r|h" },
+ { "ID":4,  "Addr":3,   "Var":"DI3", "Class":"disc", "Type":"bool", "Allow":"r|h" },
+ { "ID":5,  "Addr":42,  "Var":"DO0", "Class":"coil", "Type":"bool", "Allow":"r|h" },
+ { "ID":6,  "Addr":43,  "Var":"DO1", "Class":"coil", "Type":"bool", "Allow":"r|h" },
+ { "ID":7,  "Addr":44,  "Var":"DO2", "Class":"coil", "Type":"bool", "Allow":"r|h" },
+ { "ID":8,  "Addr":45,  "Var":"DO3", "Class":"coil", "Type":"bool", "Allow":"r|h" },
+ { "ID":9,  "Addr":42,  "Var":"HW_CODE", "Class":"inpt", "Type":"word", "Allow":"r|h" },
+ { "ID":10, "Addr":43,  "Var":"RTE_VER", "Class":"inpt", "Type":"word", "Allow":"r|h" },
+ { "ID":11, "Addr":44,  "Var":"RTE_YEAR", "Class":"inpt", "Type":"word", "Allow":"r|h" },
+ { "ID":12, "Addr":45,  "Var":"RTE_DDMM", "Class":"inpt", "Type":"word", "Allow":"r|h" },
+ { "ID":13, "Addr":46,  "Var":"HW_VAR", "Class":"inpt", "Type":"word", "Allow":"r|h" },
+ { "ID":14, "Addr":51,  "Var":"STAT1", "Class":"inpt", "Type":"word", "Allow":"r|h" },
+ { "ID":15, "Addr":102, "Var":"LT_ERR", "Class":"coil", "Type":"bool", "Allow":"r|h" },
+ { "ID":16, "Addr":103, "Var":"LT_SET", "Class":"coil", "Type":"bool", "Allow":"r|h" },
+ { "ID":17, "Addr":116, "Var":"PLC", "Class":"hold", "Type":"word", "Allow":"r|h" }
+]

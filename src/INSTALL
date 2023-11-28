@@ -1,0 +1,88 @@
+﻿REQUIREMENTS
+============
+Qt5Core
+    + libqt5core5 libqt5core5-dev
+
+Qt5WebSockets
+    + libqt5websockets5 libqt5websockets5-dev
+
+Qt5SerialPort
+    + libqt5serialport5 libqt5serialport5-dev
+
+
+INSTALL
+=======
+
+On Windows:
+
+    1. qmake
+    2. make
+    or
+    over Qt Creator
+
+On Linux/Unix:
+
+    mkdir /opt/builds
+    cp libmodbus-x.x.x /opt/builds
+    cp mysql-connector-c-x.x.x-src /opt/builds
+    cp qtservice /opt/builds
+
+    make libmodbus
+    1) cd libmodbus-x.x.x
+    2) ./configure --prefix=/usr
+    3) make
+    4) make install
+       or
+       cp src/.libs/libmodbus.* /lib
+       cp src/.libs/libmodbus.* /lib64
+     * cp src/.libs/libmodbus.* /opt/lib
+
+    make qtservice
+    * if you have systemd, then it not needed
+    * disable support service in global.h of ws-logger project
+    1) cd qtservice
+    2) qmake
+    3) make
+    4) cp src/.libs/QtSolutions_Service-head.* /lib
+       cp src/.libs/QtSolutions_Service-head.* /lib64
+     * cp src/.libs/QtSolutions_Service-head.* /opt/lib
+
+    make mysql-connector-c-x.x.x-src
+    1) cd mysql-connector-c-x.x.x-src
+    2) cmake -G "Unix Makefiles"
+    3) make
+    4) cp libmysql/libmysqlclient.* /lib
+       cp libmysql/libmysqlclient.* /lib64
+     * cp libmysql/libmysqlclient.* /opt/lib
+
+    * vi /etc/ld.so.conf.d/opt.conf
+    * add /opt/lib
+    * sudo ldconfig
+
+    make project
+    1) qmake
+    2) make
+
+RUN
+===
+
+server --config PathToConfigFile [ --sname ServiceName --sdesc ServiceDescription ]
+     
+where, PathToConfigFile - path to main config
+            ServiceName - service name (optional)
+     ServiceDescription - service description (optional)
+
+
+On Windows:
+
+    1. modify script for-win/sc-install.bat
+    2. execute for-win/sc-install.bat
+       * see Windows Service to Start | Stop
+
+On Linux:
+
+    1. modify file for-unix/wsloggerd.service
+    2. sudo cp for-unix/wsloggerd.service /etc/systemd/system
+    3. systemctl enable wsloggerd
+    4. systemctl start wsloggerd
+       * start | status | stop

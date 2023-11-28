@@ -1,0 +1,9 @@
+[{"ID":1,
+  "Class":"plc107",
+  "BaseAddr":1,
+  "Allow":1,
+  "WaitRead":1000,
+  "Reconnect":1,
+  "Registers":"/usr/local/etc/wsscada.conf.d/plc107-1.regs.json"
+  }
+]

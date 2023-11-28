@@ -1,0 +1,7 @@
+[{"ID":1,
+  "ProtoComm":"eth",
+  "ProtoData":"modbus_tcp",
+  "Allow":1,
+  "Devices":"C:\\ZVV\\workspace\\wslogger\\server\\__test\\win32\\wsscada.conf.d\\devices.json"
+  }
+]

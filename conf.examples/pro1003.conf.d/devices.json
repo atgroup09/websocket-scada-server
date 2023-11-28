@@ -1,0 +1,11 @@
+[{"ID":1,
+  "Class":"plc",
+  "BaseAddr":1,
+  "IP": "127.0.0.1",
+  "Port": 502,
+  "Allow":1,
+  "Reconnect":1,
+  "WaitRead":1000,
+  "Registers":"D:\\test\\wslogger\\pro1003.conf.d\\registers.json"
+  }
+]

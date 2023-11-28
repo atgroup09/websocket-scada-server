@@ -1,0 +1,11 @@
+{ "Host":"192.168.1.100",
+  "Port":3306,
+  "User":"user",
+  "Passwd":"password",
+  "Db":"test",
+  "Profile":"5min",
+  "UseLog":1,
+  "UseLogEvent":1,
+  "Log":"C:\\ZVV\\workspace\\wslogger\\server\\__test\\win32\\server.wsscada.arh.log",
+  "LogEvent":"C:\\ZVV\\workspace\\wslogger\\server\\__test\\win32\\server.wsscada.ev.log"
+}
