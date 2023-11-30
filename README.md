@@ -1,5 +1,7 @@
 # WebSocket Server / Logger
 
+See [Releases](https://github.com/atgroup09/websocket-scada-server/releases) to download build version.
+
 - Configuration (examples)
 - Documentation
 - Source code (+ emulator)
