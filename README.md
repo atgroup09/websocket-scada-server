@@ -1,4 +1,4 @@
-# WebSocket SCADA Server (logger)
+# WebSocket Server / Logger
 
 See [Releases](https://github.com/atgroup09/websocket-scada-server/releases) to download build version.
 
