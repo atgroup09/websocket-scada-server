@@ -1,4 +1,4 @@
-﻿# WebSocket SCADA Server (logger)
+﻿# WebSocket Server / Logger
 
 Source Code of Server
 
