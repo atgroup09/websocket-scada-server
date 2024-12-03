@@ -1,4 +1,4 @@
-/* Copyright (C) 2019-2020 ATgroup09
+/* Copyright (C) 2019-2024 ATgroup09
 *  Contact: atgroup09@gmail.com
 *
 *  This file is part of the HMI server component.
@@ -33,9 +33,16 @@
 /**
     Input arguments:
 
-    --config PathToConfigFile [ --sname ServiceName --sdesc ServiceDescription --log PathToLogOutFile ]
+    for START
 
-    [  ] - optional arguments
+        --config PathToConfigFile [ --sname ServiceName --sdesc ServiceDescription --log PathToLogOutFile ]
+
+        [  ] - optional arguments
+
+    for READ version (without start):
+
+        -v
+        --version
 */
 
 int main(int argc, char *argv[])
@@ -43,10 +50,16 @@ int main(int argc, char *argv[])
     QHash<QString, QString> ParsedArgs;
     Args::parse(argc, argv, ParsedArgs);
 
+    if(ParsedArgs.contains(ARG_KEY_VERSION) || ParsedArgs.contains(ARG_KEY_VERSION_FULL))
+    {
+        std::cout << QString(VERSION).toStdString();
+        return (0);
+    }
+
 #ifdef SERVICE
     QString SName = ParsedArgs.value(Service::ARG_KEY__SNAME, QString(SERVICE_NAME));
     Service sc(argc, argv, SName);
-    return sc.exec();
+    return (sc.exec());
 #else
     QCoreApplication a(argc, argv);
 
@@ -61,6 +74,6 @@ int main(int argc, char *argv[])
     Server Srv(ConfigFile, LogFile);
     Srv.start();
 
-    return a.exec();
+    return (a.exec());
 #endif
 }

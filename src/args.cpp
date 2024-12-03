@@ -62,22 +62,28 @@ void Args::parse(int argc, char *argv[], QHash<QString, QString> &result)
 
         if(argc > 1)
         {
-            QString Key, Value;
+            QString Key;
             bool initValue = false;
+            int i;
 
-            for(int i=1; i<argc; i++)
+            for(i=1; i<argc; i++)
             {
                 if(!initValue)
                 {
                     Key = QString(argv[i]);
+                    result.insert(Key, QString(""));
                     initValue = true;
                 }
                 else
                 {
-                    Value = QString(argv[i]);
-                    result.insert(Key, Value);
+                    result[Key] = QString(argv[i]);
                     initValue = false;
                 }
+            }
+
+            if(initValue)
+            {
+                result[Key] = QString(argv[i]);
             }
         }
     }

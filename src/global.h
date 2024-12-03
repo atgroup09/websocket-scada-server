@@ -21,24 +21,27 @@
 #ifndef GLOBAL_H
 #define GLOBAL_H
 
+#define VERSION "3.0.0"
+
+
 //Global Settings
 
+#define ARG_KEY_VERSION      "-v"
+#define ARG_KEY_VERSION_FULL "--version"
 
 #define ARG_KEY_CONFIG "--config"
 #define ARG_KEY_LOG    "--log"
 #define ARG_KEY_SNAME  "--sname"
 #define ARG_KEY_SDESC  "--sdesc"
 
-
 //* Service
 //** if define: WinService
 //** otherwise: Non-Service
-#define SERVICE
+//#define SERVICE
 
 //* Service Name and Title
 #define SERVICE_NAME   "WsLogger"
 #define SERVICE_DESC   "WsLogger"
-
 
 //* Server Name
 #define SERVER_NAME    "WsLogger"

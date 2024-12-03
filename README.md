@@ -1,4 +1,6 @@
-# WebSocket Server / Logger
+# WebSocket SCADA / Server (logger)
+
+3.0.0
 
 See [Releases](https://github.com/atgroup09/websocket-scada-server/releases) to download build version.
 
@@ -8,31 +10,56 @@ See [Releases](https://github.com/atgroup09/websocket-scada-server/releases) to 
 
 ![scheme](./images/scheme.png)
 
-### Hardware Platform
 
-- PC, Server, Laptop
-  - processor architectures
-    - x86, x64, ARMv6, ARMv7, ...
-  - interfaces
-    - Ethernet/LAN or WiFi
-    - RS-485
-    - RS-232
-    - USB
+## BUILD WORKSPACE
 
-### Software Platform
+### hardware platform
 
-- Framework / Language
-  - Qt5 / C++11
+- Desktop / Oneboard PC
+  - architectures
+    - any
+
+### software platform
+
 - OS
   - Windows
   - Linux
-- Network-protocols
-  - ModBus RTU, TCP
-  - DCON
-  - WebSocket
-- DB
+- Framework / Language
+  - Qt5 / C++11 (cross-compiler)
+- IDE
+  - Qt Creator (5.9.2)
+
+
+## USER WORKSPACE
+
+### hardware platform
+
+- Desktop / Oneboard PC, Server
+  - any architectures
+- Network interfaces
+  - Ethernet/LAN or WiFi
+  - RS-485
+  - RS-232
+  - USB
+
+### software platform
+
+- OS
+  - Windows
+  - Linux
+- Framework 
+  - Qt5 (libraries)
+- Interface
+  - server-side
+  - non-GUI (console version)
+  - executable file or OS-service
+  - multithreading
+- Network protocols
+  - ModBus RTU, TCP (all register tables)
+  - DCON (command '6' only)
+  - WebSocket (communication with HMI-clients)
+- Data base
   - MySQL5
   - MariaDB5
-- Data format
+- Data format (settings, websocket-data)
   - JSON
-- Multithreading

@@ -24,6 +24,7 @@
 #include <QObject>
 #include <QString>
 #include <QHash>
+#include <iostream>
 
 
 /**
